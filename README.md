@@ -8,7 +8,7 @@ This project demonstrates the process for ingesting streamed Apache access log d
 Project summary can be found here: www.mikiasemanuel.com/serverless-kinesis-solution-for-streamed-data
 
 
-Prerequisites:
+PREREQUISITES:
 
 Step 1: Save “Fake Apache Log Generator.zip” to a local directory and extract files.
 
