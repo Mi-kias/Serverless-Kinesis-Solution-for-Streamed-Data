@@ -20,7 +20,7 @@ Step 4: Provide EC2 instance a role with full EC2 and Kinesis Firehose permissio
 
 Step 5: Create Kinesis Firehose delivery streams outlined in Project Summary.
 
-Step 6: SSH into instance and navigate to /etc/aws-test and edit the agent.json config file with the text from “Kinesis_Agent_JSON.”
+Step 6: SSH into instance and navigate to /etc/aws-kinesis/ and edit the agent.json config file with the text from “Kinesis_Agent_JSON.”
 
 Step 7: Start the Kinesis Agent manually: 'sudo service aws-kinesis-agent start'
 
