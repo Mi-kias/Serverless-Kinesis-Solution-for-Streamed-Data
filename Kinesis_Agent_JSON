@@ -1,0 +1,19 @@
+{
+  "cloudwatch.emitMetrics": true,
+  "cloudwatch.endpoint": "",
+  "firehose.endpoint": "",
+
+  "flows": [
+    {
+      "filePattern": "/usr/apachetest/access_log_????????-??????.log*",
+      "deliveryStream": "Test_Apache_Log_Ingestion_Stream",
+	  "dataProcessingOptions":	[
+	  {
+		"initialPosition": "START_OF_FILE",
+		"maxBufferAgeMillis": "2000",
+		"optionName": "LOGTOJSON",
+		"logFormat": "COMBINEDAPACHELOG"
+		}]
+    }
+  ]
+}
