@@ -1,0 +1,10 @@
+#!/bin/bash
+yum update -y
+yum install python-pip -y
+mkdir /usr/apachetest/
+cd /usr/apachetest/
+wget "https://s3.amazonaws.com/apachetestbucket/requirements.txt"
+wget "https://s3.amazonaws.com/apachetestbucket/apache-fake-log-gen.py"
+pip install -r requirements.txt
+python apache-fake-log-gen.py -n 0 -o LOG &
+sudo yum install –y https://s3.amazonaws.com/streaming-data-agent/aws-kinesis-agent-latest.amzn1.noarch.rpm -y
