@@ -24,4 +24,4 @@ Step 6: SSH into instance and navigate to /etc/aws-kinesis/ and edit the agent.j
 
 Step 7: Start the Kinesis Agent manually: 'sudo service aws-kinesis-agent start'
 
-Step 8: When configuring the Kinesis Analytics Application, use “Kinesis_Analytis_SQL.”
+Step 8: When configuring the Kinesis Analytics Application, use “Kinesis_Analytics_SQL.”
