@@ -10,7 +10,7 @@ Project walkthrough can be found here: http://www.mikiasemanuel.com/serverless-d
 
 ## Prerequisites:
 
-### Create an S3 bucket: “apachetestbucket,” copy “requirements.txt and “apache-.py” files to S3 bucket, set bucket and object permissions to: “Public Read.”
+### Create an S3 bucket: “apachetestbucket,” copy “requirements.txt and “apache-.py” files from "Fake-Apache-Log-Generator" to S3 bucket, set bucket and object permissions to: “Public Read.”
 
 ### Configure an EC2 instance. Copy “EC2_Firehose_Bash” text and add to configuration details. *Please make sure to change wget command to navigate to S3 bucket location.*
 
