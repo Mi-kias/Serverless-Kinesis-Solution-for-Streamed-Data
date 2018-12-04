@@ -10,13 +10,13 @@ Project walkthrough can be found here: http://www.mikiasemanuel.com/serverless-k
 
 ## Prerequisites:
 
-### Create an S3 bucket: “apachetestbucket,” copy “requirements.txt and “apache-.py” files from "Fake-Apache-Log-Generator" to S3 bucket, set bucket and object permissions to: “Public Read.”
+##### Create an S3 bucket: “apachetestbucket,” copy “requirements.txt and “apache-.py” files from "Fake-Apache-Log-Generator" to S3 bucket, set bucket and object permissions to: “Public Read.”
 
-### Configure an EC2 instance. Copy “EC2_Firehose_Bash” text and add to configuration details. *Please make sure to change wget command to navigate to S3 bucket location.*
+##### Configure an EC2 instance. Copy “EC2_Firehose_Bash” text and add to configuration details. *Please make sure to change wget command to navigate to S3 bucket location.*
 
-### Provide EC2 instance a role with full EC2 and Kinesis Firehose permissions.
+##### Provide EC2 instance a role with full EC2 and Kinesis Firehose permissions.
 
-### SSH into instance and navigate to /etc/aws-test and edit the agent.json config file with the text from “KinesisAgentJSON:"
+##### SSH into instance and navigate to /etc/aws-test and edit the agent.json config file with the text from “KinesisAgentJSON:"
 ```
 {
   "cloudwatch.emitMetrics": true,
@@ -39,12 +39,12 @@ Project walkthrough can be found here: http://www.mikiasemanuel.com/serverless-k
 }
 ```
 
-### Start the Kinesis Agent manually:
+##### Start the Kinesis Agent manually:
 ```
 sudo service aws-kinesis-agent start
 ```
 
-### When configuring the Kinesis Analytics Application, use “Kinesis_Analytis_SQL” file:
+##### When configuring the Kinesis Analytics Application, use “Kinesis_Analytis_SQL” file:
 ```
 CREATE OR REPLACE STREAM "DESTINATION_SQL_STREAM" (datetime TIMESTAMP, status INTEGER, statusCount INTEGER);
 	
