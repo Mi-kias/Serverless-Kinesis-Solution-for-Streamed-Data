@@ -6,7 +6,7 @@ Languages: JSON
 
 This project demonstrates the process for ingesting streamed Apache access log data through Kinesis Firehose, aggregating data for analysis with Kinesis Analytics, persisting the analyzed data to Elasticsearch, and visualizing data with Kibana.
 
-Project walkthrough can be found here: http://www.mikiasemanuel.com/serverless-django-application-build/
+Project walkthrough can be found here: http://www.mikiasemanuel.com/serverless-kinesis-solution-for-streamed-data/
 
 ## Prerequisites:
 
