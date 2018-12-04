@@ -6,7 +6,7 @@
   "flows": [
     {
       "filePattern": "/usr/apachetest/access_log_????????-??????.log*",
-      "deliveryStream": "Test_Apache_Log_Ingestion_Stream",
+      "deliveryStream": "KF-Log-Ingest",
 	  "dataProcessingOptions":	[
 	  {
 		"initialPosition": "START_OF_FILE",
